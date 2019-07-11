@@ -37,6 +37,9 @@ left 45% / 50% 20% repeat url("Court_jester_stockholm.jpg")
 .header {
 width: 100%;
 }
+a:not(portalkey) {
+font-size:24px;
+}
 }
 
 * {
@@ -142,7 +145,8 @@ function search(ele) {
 	var randLine = window[person][Math.floor(Math.random() * window[person].length)];
         script.innerHTML += "<span class='you'>" + ele.value + "</span>";
         script.innerHTML += "<span class='" + person + "'>" + randLine + "</span>";
-    }
+    	ele.value=""
+	}
 }
 </script>
 
