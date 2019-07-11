@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Portal</title>
+
+<script>
+function access() {
+  if (prompt("What is the Portal Key?").toLowerCase().indexOf("dialec") != -1) window.location.href = "script.pdf"
+  else alert("That is Not the Portal Key")
+}
+</script>
+
+</head>
+<body onclick="access()">
+<style>
+body {
+margin: 0;
+padding: 0;
+background-image: url("portal.jpg");
+background-size: 100% 100%;
+}
+</style>
+</body>
+</html>
